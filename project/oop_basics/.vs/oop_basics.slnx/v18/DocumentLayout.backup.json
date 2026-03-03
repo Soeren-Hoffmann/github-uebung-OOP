@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vm_user\\Documents\\github-uebung-OOP\\project\\oop_basics\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71921C8F-E05B-42A2-9E8D-37D51F42FCB6}|oop_basics\\oop_basics.csproj|c:\\users\\vm_user\\documents\\github-uebung-oop\\project\\oop_basics\\oop_basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71921C8F-E05B-42A2-9E8D-37D51F42FCB6}|oop_basics\\oop_basics.csproj|solutionrelative:oop_basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vm_user\\Documents\\github-uebung-OOP\\project\\oop_basics\\oop_basics\\Program.cs",
+              "RelativeDocumentMoniker": "oop_basics\\Program.cs",
+              "ToolTip": "C:\\Users\\vm_user\\Documents\\github-uebung-OOP\\project\\oop_basics\\oop_basics\\Program.cs",
+              "RelativeToolTip": "oop_basics\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T13:16:34.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
