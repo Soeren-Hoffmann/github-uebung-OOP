@@ -1,0 +1,22 @@
+# C#
+
+## Rider ##
+.idea/
+*.sln.iml
+
+## Visual Studio ##
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results ##
+[Bb]in/
+[Oo]bj/
+
+# Other
+*.vs
+.DS_Store
+*.csproj.user
+*.props
+*.log
