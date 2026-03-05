@@ -46,13 +46,16 @@ public class Spielfigur
             Welt.Entferne(this);
         }
     }
-    public const string richtung_hoch = "hoch";
-    public const string richtung_links = "links";
-    public const string richtung_rechts = "rechts";
-    public const string richtung_runter = "runter";
-    public const string taste_angriff = "leertaste";
-
-    public void ZieheAufFeld(string richtung)
+    public enum Richtung
+    {
+        Hoch,
+        Runter,
+        Links,
+        Rechts,
+        Angriff,
+        NONE
+    };
+        public void ZieheAufFeld(Spielfigur.Richtung richtung)
     {
         // hat der player eine position von der map bekommen? nein? -> fehlermeldung
         if(Position == null)
@@ -62,28 +65,28 @@ public class Spielfigur
 
         switch (richtung)
         {
-            case richtung_hoch:
+            case Richtung.Hoch:
                 if(!Welt.Besetzt(Position[0], Position[1] - Speed))
                 {
                     Welt.SpielerBewegen(this, Position[0], Position[1] - Speed);
                     Position[1] -= Speed;
                 }
                 break;
-            case "runter":
+            case Richtung.Runter:
                 if(!Welt.Besetzt(Position[0], Position[1] + Speed))
                 {
                     Welt.SpielerBewegen(this, Position[0], Position[1] + Speed);
                     Position[1] += Speed;
                 }
                 break;
-            case Spielfigur.richtung_rechts:
+            case Richtung.Rechts:
                 if(!Welt.Besetzt(Position[0] + Speed, Position[1]))
                 {
                     Welt.SpielerBewegen(this, Position[0] + Speed, Position[1]);
                     Position[0] += Speed;
                 }
                 break;
-            case Spielfigur.richtung_links:
+            case Richtung.Links:
                 if(!Welt.Besetzt(Position[0] - Speed, Position[1]))
                 {
                     Welt.SpielerBewegen(this, Position[0] - Speed, Position[1]);

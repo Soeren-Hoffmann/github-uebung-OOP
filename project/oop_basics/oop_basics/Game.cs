@@ -23,13 +23,13 @@ public class Game
                 Console.Write(player.Type + " ist am Zug. HP: " + player.Health);
 
                 ConsoleKeyInfo key = Console.ReadKey(false);
-                string command = GetMovement(key);
+                Spielfigur.Richtung command = GetMovement(key);
 
-                if(command == Spielfigur.richtung_rechts || command == Spielfigur.richtung_links || command == Spielfigur.richtung_hoch || command == Spielfigur.richtung_runter)
+                if(command == Spielfigur.Richtung.Rechts || command == Spielfigur.Richtung.Links || command == Spielfigur.Richtung.Hoch || command == Spielfigur.Richtung.Runter)
                 {
                     player.ZieheAufFeld(command);
                 }
-                else if(command == Spielfigur.taste_angriff)
+                else if(command == Spielfigur.Richtung.Angriff)
                 {
                     Welt.VerursacheSchaden(player);
                 }
@@ -37,13 +37,14 @@ public class Game
         }
     }
 
-    private string GetMovement(ConsoleKeyInfo key)
+    private Spielfigur.Richtung GetMovement(ConsoleKeyInfo key)
     {
-        if(key.Key == ConsoleKey.W) return Spielfigur.richtung_hoch;
-        else if(key.Key == ConsoleKey.A) return Spielfigur.richtung_links;
-        else if(key.Key == ConsoleKey.D) return Spielfigur.richtung_rechts;
-        else if(key.Key == ConsoleKey.S) return Spielfigur.richtung_runter;
-        else if(key.Key == ConsoleKey.Spacebar) return Spielfigur.taste_angriff;
-        return "";
+        if(key.Key == ConsoleKey.W) return Spielfigur.Richtung.Hoch;
+        else if(key.Key == ConsoleKey.A) return Spielfigur.Richtung.Links;
+        else if(key.Key == ConsoleKey.D) return Spielfigur.Richtung.Rechts;
+        else if(key.Key == ConsoleKey.S) return Spielfigur.Richtung.Runter;
+        else if(key.Key == ConsoleKey.Spacebar) return Spielfigur.Richtung.Angriff;
+        
+        return Spielfigur.Richtung.NONE;
     }
 }
