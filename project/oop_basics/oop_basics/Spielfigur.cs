@@ -1,4 +1,5 @@
 using System.Dynamic;
+using System.Reflection.Metadata;
 
 public class Spielfigur
 {
@@ -45,6 +46,11 @@ public class Spielfigur
             Welt.Entferne(this);
         }
     }
+    public const string richtung_hoch = "hoch";
+    public const string richtung_links = "links";
+    public const string richtung_rechts = "rechts";
+    public const string richtung_runter = "runter";
+    public const string taste_angriff = "leertaste";
 
     public void ZieheAufFeld(string richtung)
     {
@@ -56,7 +62,7 @@ public class Spielfigur
 
         switch (richtung)
         {
-            case "hoch":
+            case richtung_hoch:
                 if(!Welt.Besetzt(Position[0], Position[1] - Speed))
                 {
                     Welt.SpielerBewegen(this, Position[0], Position[1] - Speed);
@@ -70,14 +76,14 @@ public class Spielfigur
                     Position[1] += Speed;
                 }
                 break;
-            case "rechts":
+            case Spielfigur.richtung_rechts:
                 if(!Welt.Besetzt(Position[0] + Speed, Position[1]))
                 {
                     Welt.SpielerBewegen(this, Position[0] + Speed, Position[1]);
                     Position[0] += Speed;
                 }
                 break;
-            case "links":
+            case Spielfigur.richtung_links:
                 if(!Welt.Besetzt(Position[0] - Speed, Position[1]))
                 {
                     Welt.SpielerBewegen(this, Position[0] - Speed, Position[1]);
