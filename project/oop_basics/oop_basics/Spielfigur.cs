@@ -27,11 +27,11 @@ public class Spielfigur
         int EndSchaden = 0;
         if(figur.Waffe.Schadensart == "Klingenschaden")
         {
-            EndSchaden = figur.Waffe.Damage - this.KlingenResistenz;    
+            EndSchaden = figur.Waffe.Schaden - this.KlingenResistenz;    
         } 
         else if (figur.Waffe.Schadensart == "Schlagschaden")
         {
-            EndSchaden = figur.Waffe.Damage - this.SchlagResistenz;    
+            EndSchaden = figur.Waffe.Schaden - this.SchlagResistenz;    
         }
 
         if (this.Health > EndSchaden)

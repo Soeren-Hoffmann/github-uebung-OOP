@@ -1,8 +1,8 @@
 public class Schwert : Waffe
 {
-    public Schwert(int damage)
+    public Schwert(int schaden)
     {
-        this.Damage = damage;
+        this.Schaden = schaden;
         this.Reichweite = 1;
         this.Schadensart = "Klingenschaden";
     }
