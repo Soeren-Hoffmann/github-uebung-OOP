@@ -8,6 +8,8 @@ public class Spielwelt
     public Spielfigur?[,] board = new Spielfigur[_size_x, _size_y];
     private static Spielwelt? _instance;
 
+    private static SpielfeldRenderer _renderer = new SpielfeldRenderer();
+
     private Spielwelt()
     {
     }
@@ -115,32 +117,6 @@ public class Spielwelt
 
     public string GetSpielfeld()
     {
-        // string result = "\033[1;1H";
-        string result = "";
-        try
-        {
-            Console.SetCursorPosition(1,1);
-        } catch (Exception e)
-        {
-            
-        }
-
-        for(int i = 0; i < board.GetLength(0); i++)
-        {
-            for(int j = 0; j < board.GetLength(1); j++)
-            {
-                Spielfigur? figur = board[j, i];
-                if(figur == null)
-                {
-                    result += ".";
-                }
-                else
-                {
-                    result += figur.Type;
-                }
-            }
-            result += "\n";
-        }
-        return result;
+        return _renderer.GetSpielfeld(this);
     }
 }
