@@ -1,0 +1,9 @@
+Old line counts (before refactoring)
+Spielwelt.cs  147
+Spielfigur.cs  89
+Game.cs        48
+
+Program.cs     13
+Waffe.cs        6
+Schwert.cs      9
+Keule.cs        9
