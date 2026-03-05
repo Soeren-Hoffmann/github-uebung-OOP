@@ -1,9 +1,7 @@
 public class Schwert : Waffe
 {
-    public Schwert(int schaden)
+    public Schwert(int schaden):
+        base(schaden, 1, "Klingenschaden")
     {
-        this.Schaden = schaden;
-        this.Reichweite = 1;
-        this.Schadensart = "Klingenschaden";
     }
 }

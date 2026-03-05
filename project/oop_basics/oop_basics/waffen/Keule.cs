@@ -1,9 +1,7 @@
 public class Keule : Waffe
 {
-    public Keule(int schaden)
+    public Keule(int schaden):
+        base(schaden, 2, "Schlagschaden")
     {
-        this.Schaden = schaden;
-        this.Reichweite = 2;
-        this.Schadensart = "Schlagschaden";
     }
 }
