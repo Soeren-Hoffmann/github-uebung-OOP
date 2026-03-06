@@ -106,7 +106,7 @@ public class Spielwelt
         }
     }
 
-    private bool IsOutOfBounds(int x_pos, int y_pos)
+    public bool IsOutOfBounds(int x_pos, int y_pos)
     {
         if(x_pos >= _size_x || y_pos >= _size_y || x_pos < 0 || y_pos < 0)
         {

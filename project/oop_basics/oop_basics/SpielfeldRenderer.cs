@@ -10,7 +10,7 @@ class SpielfeldRenderer
             Console.SetCursorPosition(1,1);
         } catch (Exception e)
         {
-            
+            Console.WriteLine(e.ToString());
         }
 
         for(int i = 0; i < welt.board.GetLength(0); i++)

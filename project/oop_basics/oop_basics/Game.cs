@@ -4,12 +4,19 @@ using Microsoft.VisualBasic;
 public class Game
 {
     List<Spielfigur> Players =  new List<Spielfigur>();
-    Spielwelt Welt = Spielwelt.GetInstance();
+    private readonly Spielwelt _Welt; 
+    private readonly Kampfsystem _Kampf;
+
+    public Game()
+    {
+        _Welt = Spielwelt.GetInstance(); 
+        _Kampf = new Kampfsystem(_Welt);
+    }
 
     public void AddSpieler(Spielfigur figur)
     {
         Players.Add(figur);
-        Welt.SpawnPlayer(figur);
+        _Welt.SpawnPlayer(figur);
     }
 
     public void Start()
@@ -18,7 +25,7 @@ public class Game
         {
             foreach(Spielfigur player in Players)
             {
-                Console.Write(Welt.GetSpielfeld());
+                Console.Write(_Welt.GetSpielfeld());
                 if(player.Health <= 0) continue;
                 Console.Write(player.Type + " ist am Zug. HP: " + player.Health);
 
@@ -31,7 +38,7 @@ public class Game
                 }
                 else if(command == Spielfigur.Richtung.Angriff)
                 {
-                    Welt.VerursacheSchaden(player);
+                    _Welt.VerursacheSchaden(player);
                 }
             }
         }

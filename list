@@ -1,0 +1,82 @@
+[33mcommit 13489af51ee671d84c2752b24e49786a304ba136[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 15:58:05 2026 +0100
+
+    refactor: seperate display/presentation from world state
+
+Notes:
+    Old line counts (before refactoring)
+    Spielwelt.cs  147
+    Spielfigur.cs  89
+    Game.cs        48
+    
+    Program.cs     13
+    Waffe.cs        6
+    Schwert.cs      9
+    Keule.cs        9
+
+[33mcommit d9126e41e83bee5c752cd18142e31d965dd7a1e2[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 15:06:17 2026 +0100
+
+    refactor: keys to dedicated enum
+
+[33mcommit a9b80c17a3d555b82196dedcfe19535e4498dd17[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 14:55:51 2026 +0100
+
+    fix: secure input validation
+
+[33mcommit b10057d0ecaf85c1766cbf5a9142308e7842ea6f[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 14:36:03 2026 +0100
+
+    fix: secure properties of weapons
+
+[33mcommit d7f3091ec60977e7bb27ef6699630795de96be34[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 14:27:37 2026 +0100
+
+    fix: add constructor and proper derive class implementations
+
+[33mcommit 96ee1a738a62bbc94628d2423a8a979f91103eab[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 13:57:27 2026 +0100
+
+    fix: change english weapon releated vocabulary to german
+
+[33mcommit a8a239be2811dbd333be6e9e1308483b8e3a7885[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 12:51:06 2026 +0100
+
+    feat(repo): set starting point for code refactoring
+
+[33mcommit b069fcc0efef13e26d556771e591fdb289b06d83[m[33m ([m[1;32mmain[m[33m)[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 12:38:29 2026 +0100
+
+    chore(repo): renive build artifacts
+
+[33mcommit d138209e66a4a82ff0d9341985b9e49fcb11944c[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Thu Mar 5 12:35:14 2026 +0100
+
+    chore(repo): add gitignore to ignore build artifacts
+
+[33mcommit e82ff73050b94f4966cc2dcc5de775ae73c267f7[m[33m ([m[1;31morigin/submission/s.neuner[m[33m, [m[1;31morigin/submission/s.hoffmann[m[33m, [m[1;31morigin/submission/r.kabanov[m[33m, [m[1;31morigin/submission/p.strohschein[m[33m, [m[1;31morigin/submission/m.hoyer[m[33m, [m[1;31morigin/submission/m.beck[m[33m, [m[1;31morigin/submission/b.seidel[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sören (Dozent) <Soeren.Hoffmann@Qualidy.de>
+Date:   Tue Mar 3 14:29:05 2026 +0100
+
+    feat: add code project structure
+
+[33mcommit 38da002af3ecedb735e7aba405ce98a10442b874[m
+Author: Soeren-Hoffmann <Soeren.Hoffmann@Qualidy.de>
+Date:   Tue Mar 3 14:10:18 2026 +0100
+
+    Update readme.md
+
+[33mcommit 9068cd25c60d7f385df45c34b2b46c856c84aac7[m
+Author: Sören (Dozent) <Soeren.Hoffmann@Qualidy.de>
+Date:   Mon Mar 2 14:17:10 2026 +0100
+
+    Inital commit with reamde
